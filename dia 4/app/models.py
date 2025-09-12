@@ -7,3 +7,8 @@ class Usuarios(models.Model):
 
     def __str__(self):
         return self.user
+    
+class Endereco(models.Model):
+    endereco = models.CharField(max_length= 100)
+    other = models.CharField(max_length= 100)
+    email = models.EmailField()
